@@ -1,0 +1,48 @@
+%%-------------------------------------------------------------------------------------------------
+%%                           Template Notes:
+%% Make sure to have all template files from klmweb/revisions/templates/JJH_Beamer before using
+%% this file. Also please read the Beamer Reference document for typists if you have any questions
+%% on the usage of this template.
+% -------------------------------------------------------------------------------------------------
+\documentclass[dynamic]{JJH-Beamer}
+
+%% -- Extra Packages (Place Packages here if they are not included in the default template)--------
+
+
+%% ------ Extra Preamble Definitions (Place any other extra preamble stuff here) ------------------
+
+
+% ------------ Title, author, date (ALWAYS UPDATE THESE THINGS) -----------------------------------
+
+\def \thetitle { } % Full title goes here
+
+\def \theshorttitle { } %Short title goes here
+
+\def \theauthor { } % Author name(s) go here
+
+\def \theshortauthor { } % Short author name(s) go here; should fit on this one line.
+
+\def \thedate { } % Date and venue information
+
+\def \eventnotes { } % Other event info, to appear on the front of the private notes
+
+% -------------------------------------------------------------------------------------------------
+
+\begin{document}
+
+\mode<all>{\theTitlePages} % Macro to insert both title pages DO NOT REMOVE!
+
+%%
+%% ------------------------- Content starts here --------------------------------------------------
+%%
+
+%%
+%%--------------------------- Content ends here ---------------------------------------------------
+%%
+
+% --------------------- Bibliography hidden with a save box ---------------------------------------
+\mode<all>
+\bibliographystyle{chicago}
+\savebox\hiddenbib{\parbox{\textwidth}{\bibliography{heckman}}}
+
+\end{document} 
